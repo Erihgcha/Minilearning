@@ -1,0 +1,150 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #f4f9ff;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  padding: 2rem;
+  background: #87ceeb;
+  color: white;
+}
+
+header h1 {
+  font-weight: 700;
+}
+
+.frase {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  font-weight: 400;
+}
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem 1rem;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background: #87ceeb;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.timeline-block {
+  position: relative;
+  width: 45%;
+  margin: 2rem 0;
+}
+
+.timeline-block:nth-child(odd) {
+  left: 0;
+  text-align: right;
+}
+
+.timeline-block:nth-child(even) {
+  left: 55%;
+  text-align: left;
+}
+
+.timeline-block button {
+  background-color: #87ceeb;
+  color: white;
+  border: none;
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  width: 100%;
+  font-weight: 700;
+}
+
+.timeline-block button:hover {
+  background-color: #5eb2d3;
+}
+
+.timeline-content {
+  background: #ffffff;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  font-weight: 400;
+}
+
+/* Microlearning estilos */
+
+.microlearning {
+  margin-top: 1.5rem;
+}
+
+.step {
+  margin-bottom: 1.5rem;
+  text-align: left;
+  position: relative;
+}
+
+.step h3 {
+  display: inline-block;
+  margin-left: 60px;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.circle-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background-color: #ff6b6b;
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: 0;
+  animation: pulse 1.5s infinite;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); box-shadow: 0 0 10px rgba(255,107,107,0.5); }
+  50% { transform: scale(1.1); box-shadow: 0 0 20px rgba(255,107,107,0.7); }
+  100% { transform: scale(1); box-shadow: 0 0 10px rgba(255,107,107,0.5); }
+}
+
+.step-content {
+  display: none;
+  opacity: 0;
+  margin-top: 0.5rem;
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  transition: all 0.5s ease;
+}
+
+.step-content.show {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #eee;
+  margin-top: 2rem;
+  font-weight: 400;
+}

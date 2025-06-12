@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>B-humano</title>
+  <link rel="stylesheet" href="main.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>B-humano</h1>
+    <p class="frase">De la idea a la creación: adopta, adapta y comparte.</p>
+  </header>
+
+  <section class="timeline">
+    <!-- Diseño instruccional -->
+    <div class="timeline-block">
+      <button onclick="toggleContent(0)">Diseño instruccional</button>
+      <div class="timeline-content">
+        <p>¿Qué es el diseño instruccional y cómo transforma la educación digital?</p>
+        <div class="microlearning">
+          <div class="step">
+            <button class="circle-btn" onclick="toggleStep(0)">+</button>
+            <h3>Presenta</h3>
+            <div class="step-content">
+              <p>El diseño instruccional es el proceso planificado de crear experiencias de aprendizaje efectivas. Permite organizar objetivos, contenidos, actividades y evaluaciones con base en teorías pedagógicas.</p>
+            </div>
+          </div>
+          <div class="step">
+            <button class="circle-btn" onclick="toggleStep(1)">+</button>
+            <h3>Testea</h3>
+            <div class="step-content">
+              <p>Se emplea para estructurar cursos, talleres, programas de capacitación, contenidos e-learning, MOOC, entre otros, validando que los objetivos de aprendizaje se cumplan de forma efectiva.</p>
+            </div>
+          </div>
+          <div class="step">
+            <button class="circle-btn" onclick="toggleStep(2)">+</button>
+            <h3>Ejemplifica</h3>
+            <div class="step-content">
+              <p>Ejemplo: Al diseñar un curso online de ventas, primero defines los objetivos, seleccionas el contenido relevante, diseñas actividades prácticas, agregas evaluaciones y aseguras retroalimentación.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tecnología educativa -->
+    <div class="timeline-block">
+      <button onclick="toggleContent(1)">Tecnología educativa</button>
+      <div class="timeline-content">
+        <p>Herramientas que facilitan la creación de experiencias e-learning.</p>
+        <div class="microlearning">
+          <div class="step">
+            <button class="circle-btn" onclick="toggleStep(3)">+</button>
+            <h3>Presenta</h3>
+            <div class="step-content">
+              <p>La tecnología educativa integra herramientas digitales para mejorar los procesos de enseñanza-aprendizaje, facilitando el acceso, la personalización y la interactividad en el aprendizaje.</p>
+            </div>
+          </div>
+          <div class="step">
+            <button class="circle-btn" onclick="toggleStep(4)">+</button>
+            <h3>Testea</h3>
+            <div class="step-content">
+              <p>Se ocupa en plataformas LMS, aplicaciones móviles, simuladores, entornos virtuales de aprendizaje, realidad aumentada, gamificación y evaluación automatizada.</p>
+            </div>
+          </div>
+          <div class="step">
+            <button class="circle-btn" onclick="toggleStep(5)">+</button>
+            <h3>Ejemplifica</h3>
+            <div class="step-content">
+              <p>Ejemplo: Utilizar Moodle como plataforma central donde los estudiantes acceden a materiales, participan en foros, completan actividades interactivas y reciben retroalimentación inmediata.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- IA en la educación -->
+    <div class="timeline-block">
+      <button onclick="toggleContent(2)">IA en la educación</button>
+      <div class="timeline-content">
+        <p>Usos prácticos de la IA generativa para diseñadores instruccionales.</p>
+        <div class="microlearning">
+          <div class="step">
+            <button class="circle-btn" onclick="toggleStep(6)">+</button>
+            <h3>Presenta</h3>
+            <div class="step-content">
+              <p>La IA generativa permite crear contenidos, personalizar rutas de aprendizaje, generar retroalimentación automática, analizar datos de desempeño y asistir en el diseño instruccional adaptativo.</p>
+            </div>
+          </div>
+          <div class="step">
+            <button class="circle-btn" onclick="toggleStep(7)">+</button>
+            <h3>Testea</h3>
+            <div class="step-content">
+              <p>Se emplea en chatbots educativos, generación automática de exámenes, diseño de recursos multimedia, análisis predictivo de estudiantes y recomendación de contenidos personalizados.</p>
+            </div>
+          </div>
+          <div class="step">
+            <button class="circle-btn" onclick="toggleStep(8)">+</button>
+            <h3>Ejemplifica</h3>
+            <div class="step-content">
+              <p>Ejemplo: Implementar un asistente virtual que responde preguntas frecuentes del curso, genera ejercicios de práctica y adapta los contenidos a las necesidades de cada estudiante.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 - B-humano</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
